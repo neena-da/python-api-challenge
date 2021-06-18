@@ -36,12 +36,14 @@
   * Latitude vs. Temperature Plot
     Observation : We can see the maximum temperature increase with latitude for cities with latitude less than 0.
                   We can see the maximum temperature decrease with latitude for cities with latitude greater than 0.
- * Latitude vs. Humidity Plot
+  * Latitude vs. Humidity Plot
     Observation : We cannot really see any relation/trend between the latitudes and the humidity
- * Latitude vs. Cloudiness Plot
+  * Latitude vs. Cloudiness Plot
     Observation : We cannot really see any relation/trend between the latitudes and the humidity
-* Latitude vs. Wind Speed Plot
+  * Latitude vs. Wind Speed Plot
     Observation : We cannot really see any relation/trend between the latitudes and the humidity
+
+### Plotting the Linear Regression
 
 
 
