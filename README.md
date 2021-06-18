@@ -39,11 +39,31 @@
   * Latitude vs. Humidity Plot
     Observation : We cannot really see any relation/trend between the latitudes and the humidity
   * Latitude vs. Cloudiness Plot
-    Observation : We cannot really see any relation/trend between the latitudes and the humidity
+    Observation : We cannot really see any relation/trend between the latitudes and the cloudiness
   * Latitude vs. Wind Speed Plot
-    Observation : We cannot really see any relation/trend between the latitudes and the humidity
+    Observation : We cannot really see any relation/trend between the latitudes and the wind speed
 
 ### Plotting the Linear Regression
+* Using loc, split the dataframe into 2 dataframes bases on the latitudes - Northern Hemisphere (Latitude >=0) and Southern Hemisphere (Latitude < 0)
+* Set up a function to generate the scatter plot for different measures for both cities in northern hemisphere and southern hemisphere. The function will create the scatter plot based on the x values and y values passed and also return the slope, intercept and rvalue.
+* Performed the Linear Regression and ploted the line of best fit for the below
+  * Latitude vs. Temperature Plot - Northern Hemisphere
+    Observation : We can see the maximum temperature decrease with latitude for cities in the northern hemisphere.
+  * Latitude vs. Temperature Plot - Southern Hemisphere
+    Observation : We can see the maximum temperature increase with latitude for cities in the southern hemisphere.                  
+  * Latitude vs. Humidity Plot - Northern Hemisphere
+    Observation : We cannot really see any relation/trend between the latitudes and the humidity
+  * Latitude vs. Humidity Plot - Southern Hemisphere
+    Observation : We cannot really see any relation/trend between the latiudes and the humidity. Howvever, the humidity of majority         of cities in southern hemisphere is found to be higher.
+  * Latitude vs. Cloudiness Plot - Northern Hemisphere
+    Observation : We cannot really see any relation/trend between the latitudes and the cloudiness
+  * Latitude vs. Cloudiness Plot - Southern Hemisphere
+    Observation : We cannot really see any relation/trend between the latitudes and the cloudiness
+  * Latitude vs. Wind Speed Plot - Northern Hemisphere
+    Observation : We cannot really see any relation/trend between the latitudes and the wind speed
+  * Latitude vs. Wind Speed Plot - Southern Hemisphere
+    Observation : We cannot really see any relation/trend between the latitudes and the  wind speed
+
 
 
 
