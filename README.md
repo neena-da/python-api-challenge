@@ -78,6 +78,7 @@
 ### Create the Hotel Marker Map
 * Filter the dataframe to only include cities with maximum temperature between 70 and 80 Farenheit, with wind speed less than 10mph and cloudiness equal to 0 %.
 * Retrived 10 cities from the selected cities satisfying the above criteria. Added a column Hotel Name with blank rows.
+* base_url = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
 * Make the Google place API call to find hotels within 5000m from the city. Used the type = 'lodging' in the parameters.
 * Retreived the Hotel name from the API json response and populated the dataframe with the hotel name.
 * Removed any cities for which there are no hotels within 5000m.
