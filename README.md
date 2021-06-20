@@ -54,7 +54,7 @@
   * Latitude vs. Humidity Plot - Northern Hemisphere
     Observation : We cannot really see any relation/trend between the latitudes and the humidity
   * Latitude vs. Humidity Plot - Southern Hemisphere
-    Observation : We cannot really see any relation/trend between the latiudes and the humidity. Howvever, the humidity of majority         of cities in southern hemisphere is found to be higher.
+    Observation : We cannot really see any relation/trend between the latiudes and the humidity. Howvever, the humidity of majority           of cities in southern hemisphere is found to be higher.
   * Latitude vs. Cloudiness Plot - Northern Hemisphere
     Observation : We cannot really see any relation/trend between the latitudes and the cloudiness
   * Latitude vs. Cloudiness Plot - Southern Hemisphere
@@ -64,7 +64,22 @@
   * Latitude vs. Wind Speed Plot - Southern Hemisphere
     Observation : We cannot really see any relation/trend between the latitudes and the  wind speed
 
+## VacationPy
 
+### Loading the csv file from WeatherPy
+* Load the csv file as a dataframe
 
+### Creating Humidity Heatmap
+* Configure google api key
+* Saved the latitude and longitude from the dataframe to be used as location
+* Saved the humidity from the dataframe to be used as weights
+* Created the heatmap for the humidities and saved the figure in the outpue folder.
 
+### Create the Hotel Marker Map
+* Filter the dataframe to only include cities with maximum temperature between 70 and 80 Farenheit, with wind speed less than 10mph and cloudiness equal to 0 %.
+* Retrived 10 cities from the selected cities satisfying the above criteria. Added a column Hotel Name with blank rows.
+* Make the Google place API call to find hotels within 5000m from the city. Used the type = 'lodging' in the parameters.
+* Retreived the Hotel name from the API json response and populated the dataframe with the hotel name.
+* Removed any cities for which there are no hotels within 5000m.
+* Added the marker layer on top of the heatmap layer with info_box_content displayed.
 
